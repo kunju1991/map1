@@ -1,0 +1,34 @@
+{
+    "application": {
+        "id": "",
+        "title": "map1map1.map1",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/",
+        "appUrl": "#map1-Display",
+        "navigationComponentName": "map1map1",
+        "intentSemanticObject": "map1",
+        "intentAction": "Display",
+        "html5ApplicationName": "zmap",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [
+            "ae22c479-2822-47f2-b9e2-ae9aedf8fdf0"
+        ],
+        "contentPackages": [
+            "996b14bb-6e1e-4951-92a0-b7b7702b9663"
+        ],
+        "categories": []
+    },
+    "tile": {
+        "type": "StaticTile",
+        "title": "World Map",
+        "subtitle": "Analytic Map",
+        "searchKeywords": "World Map,Analytic Map",
+        "displayIconUrl": "sap-icon://map",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "",
+        "refreshInterval": ""
+    }
+}

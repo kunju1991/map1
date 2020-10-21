@@ -1,0 +1,40 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
+	controllerName="map1map1.controller.App" xmlns:vbm="sap.ui.vbm" height="100%" displayBlock="true">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<!--<VBox fitContainer="true" justifyContent="Center" alignItems="Center">-->
+					<!--<HBox fitContainer="true" justifyContent="Center" alignItems="Center">
+							<Input id="inStSearch" editable="true" value="" maxLength="80"/>
+							<Input id="inEnSearch" editable="true" value="" maxLength="80"/>
+							<Button id="bnSearch" text="Search" press="onChangeHandler"/>-->
+					<!--<ComboBox items="{ path: '/ProductCollection', sorter: { path: 'Name' } }">-->
+					<!--<ComboBox id="idTravelMode" items="{/TravelMode}">
+								<core:Item key="{TravelModeId}" text="{Description}"/>
+							</ComboBox>
+						</HBox>-->
+					<!--						<HBox id="map" fitContainer="true" justifyContent="Center" alignItems="Center">-->
+					<vbm:AnalyticMap id="vbi" width="100%" height="100%" regionClick="onRegionClick"
+						regionContextMenu="onRegionContextMenu">
+						<vbm:vos>
+							<vbm:Routes>
+								<vbm:Route position="2.3522219;48.856614;0; -74.0059731;40.7143528;0" color="rgb(117,148,34)" colorBorder="rgb(255,255,255)" linewidth="3"
+									routetype="Geodesic" click="onClickRoute" contextMenu="onContextMenuRoute"/>
+								<vbm:Route position="2.3522219;48.856614;0; -118.2436849;34.0522342;0" color="rgb(92,186,230)" colorBorder="rgb(255,255,255)" linewidth="3"
+									routetype="Geodesic" lineDash="10;5" click="onClickRoute" contextMenu="onContextMenuRoute"/>
+							</vbm:Routes>
+						</vbm:vos>
+						<vbm:legend>
+							<vbm:Legend id="legend" caption="Legend" items="{/Legend}">
+								<vbm:LegendItem text="{text}" color="{color}"/>
+							</vbm:Legend>
+						</vbm:legend>
+					</vbm:AnalyticMap>
+					<!--						</HBox>
+					</VBox>-->
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
